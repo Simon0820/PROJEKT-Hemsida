@@ -18,7 +18,7 @@ h1{
     flex-direction: column;
 }
 
-.communication-Info{
+.communication-info{
     display: flex;
     justify-content: center;
     width: 20%;
