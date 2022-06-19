@@ -1,2 +1,1 @@
-Small learning project :)
-For future familymembers consultantcompany.
+Small learning project :), For future familymembers consultantcompany.
