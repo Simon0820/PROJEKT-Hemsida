@@ -3,18 +3,32 @@ function openLinkedin(){
 }
 
 function hideText(){
-    var x = document.getElementById("textDiv");
-    var y = document.getElementById("topName");
+    var x = document.getElementsByClassName("middle-div");
+    var items = x[0];
 
-    x.style.display = "none";
-    y.style.display = "none"; 
+    items.style.display = "none";
 
 }
 
 function showText(){
-    var x = document.getElementById("textDiv");
-    var y = document.getElementById("topName");
+    var x = document.getElementsByClassName("middle-div");
+    var items = x[0];
     
-    x.style.display = "block";
-    y.style.display = "block"; 
+    items.style.display = "block";
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction(){
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        var x = document.getElementsByClassName("top-div");
+        var div = x[0];
+
+        div.style.top = "0";
+    }
+    else{
+        var x = document.getElementsByClassName("top-div");
+        var div = x[0]
+        div.style.top = "-50px";
+    }
 }

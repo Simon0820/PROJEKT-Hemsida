@@ -3,42 +3,69 @@ html{
 }
 
 body{
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
 }
 
-h1{
+img{
+    user-select: none;
+}
+
+.top-div{
     display: flex;
     justify-content: center;
-    opacity: 0.7;
+    gap: 20px;
+    position: fixed;
+    height: 50px;
+    top: -50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(117, 188, 188, 0.9);
+    transition: 0.7s;
 }
 
-.main-div{
-    display: grid;
-    justify-items: center;
+.top-div a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;
+    text-align: center;
+    color: black;
+}
+
+.top-div a:hover{
+    background-color: rgba(208, 164, 164, 0.6);
+}
+
+.top-div a:target{
+    background-color: red;
+    box-shadow: 0 5px #666;
+    transform: translate(4px);
+}
+
+.middle-div{
+    display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
 }
 
-.communication-info{
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    max-width: fit-content;
-    
+#link-pics{
+    cursor: pointer;
+    width: 35px;
+    opacity: 0.3;
+}
+
+#link-pics:hover{
+    opacity: 1;
 }
 
 footer{
     display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    gap: 15px;
+    justify-content: center;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
     user-select: none;
     background-color: rgb(159, 195, 226);
-    justify-content: center;
-}
-
-img{
-    width: 60px;
-    cursor: pointer;
 }
