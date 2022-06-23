@@ -35,11 +35,6 @@ img{
     background-color: rgba(208, 164, 164, 0.6);
 }
 
-.top-div a:target{
-    background-color: red;
-    box-shadow: 0 5px #666;
-    transform: translate(4px);
-}
 
 .middle-div{
     display: flex;
